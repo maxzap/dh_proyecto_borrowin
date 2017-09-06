@@ -121,3 +121,34 @@ textarea{
   text-align: center;
   margin: 40px 0;
 }
+
+
+/* Start Form Login*/
+.contact-us {
+  background:url(../images/fondo_sign_up.jpg) no-repeat center center fixed;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  min-height: 918px;
+}
+
+
+.contact-us .fields {
+  background:rgba(9,9,9,0.4);
+  min-height: 918px;
+  max-width: 450px;
+  color:#DDD;
+  margin: 0 auto
+
+}
+
+.contact-us .fields  a {
+    margin: 0 195px;
+    font-weight: bold;
+}
+.contact-us .fields a:hover {
+  text-decoration:none;
+ color: #FFF;
+font-weight: bold;
+}
