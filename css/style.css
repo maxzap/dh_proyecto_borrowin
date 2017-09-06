@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
   box-sizing: border-box;
   margin: 0;
@@ -121,3 +122,126 @@ textarea{
 .main-footer{
   margin: 40px 0;
 }
+=======
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+ul, ol{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1{
+  font-family: 'Kaushan Script', cursive;
+  padding: 5px;
+  margin: 3px;
+  font-size: 1.2em;
+  color: rgb(247, 204, 75);
+  float: left;
+}
+h2, h3 {
+  font-family: 'Baloo+Tamma', sans-serif;
+  width: 100vw;
+}
+p{
+  font-family: 'Marvel', sans-serif;
+}
+.main-header{
+  background-color: rgb(145, 183, 193);
+  height: 45px;
+}
+.toggle-nav{
+  position: absolute;
+  color: #fff;
+  background-color:  rgb(247, 204, 75);
+  padding: 8px 8px;
+  top: 5px;
+  right: 12px;
+  font-size: 1em;
+  border-radius: 2px 2px;
+}
+.main-nav{
+  position: relative;
+  display: none;
+  clear: both;
+}
+.main-nav a{
+  font-family: 'Katibeh', sans-serif;
+  display: block;
+  text-align: center;
+  background-color: rgba(163, 185, 190, 0.9);
+  padding: 6px 4px;
+  font-size: 2em;
+  color: #fff;
+}
+.home{
+  background-image:url(../images/fondo_home-1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50% 45px;
+  text-align: center;
+  height: 80vh;
+}
+.home h2, .home h3{
+  color: #303233;
+  text-align: center;
+}
+.front-banner{
+  display: block;
+  position: relative;
+  top: 35%;
+  background: linear-gradient(rgba(163, 185, 190, 0.6),#FFFFFF);
+}
+.front-banner h2{
+  font-size: 3em;
+  text-transform: uppercase;
+}
+.front-banner h3{
+  font-size: 1.6em;
+  font-family: 'Courgette', cursive;
+}
+#login-button{
+  display: inline-block;
+  font-size: 1.5em;
+  color: #fff;
+  background-color:  rgb(247, 204, 75);
+  border-radius: 10px 10px;
+  width: 50vw;
+  height: 11vh;
+  line-height: 2.5em;
+  margin-top: 50px;
+  padding: 4px 10px;
+}
+textarea{
+  width: 100vw;
+}
+.services{
+  text-align: center;
+  display: block;
+  clear: both;
+}
+.ion-ios-cart, .ion-iphone, .ion-lock-combination{
+  color: #fff;
+  background-color:  rgb(247, 204, 75);
+  border-radius: 50%;
+  font-weight: bolder;
+  font-size: 55px;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  margin: 50px 0 10px;
+  display: inline-block;
+}
+.services h2{
+  margin: 20px;
+}
+.main-footer{
+  text-align: center;
+  margin: 40px 0;
+}
+>>>>>>> ebdd6b4d824661c8cdefa33c60043c674102a769
