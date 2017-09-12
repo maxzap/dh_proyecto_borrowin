@@ -59,6 +59,7 @@ p{
 .home{
   background-image:url(../images/fondo_home-1.jpg);
   background-repeat: no-repeat;
+  background-color: rgb(145, 183, 193);
   background-size: 100%;
   background-position: 50% 45px;
   text-align: center;
@@ -96,10 +97,8 @@ p{
   /*height: 11vh;*/
   line-height: 2.5em;
   margin-top: 50px;
+  margin-bottom: 20px;
   padding: 4px 10px;
-}
-textarea{
-  width: 100vw;
 }
 .services{
   text-align: center;
@@ -125,6 +124,7 @@ textarea{
   text-align: center;
   margin: 40px 0;
 }
+
 /*----------------------*/
 details{
   text-align: left;
@@ -233,10 +233,14 @@ button.submit {
     text-shadow: 0 -1px 0 #396715;
 }
 
-
 /* Tablet */
 
 @media (min-width: 620px) {
+
+    #login-button {
+        width: 40vw;
+        height: 7vh;
+    }
     /*#login-button {
         width: 40vw;
     }*/
@@ -247,12 +251,24 @@ button.submit {
 }
 
 
-
 /* Desktop */
 
 @media (min-width: 1000px) {
     .toggle-nav {
         display: none;
+
+    }
+    .main-header {
+        overflow: hidden;
+    }
+    .logo {
+        background-color: rgb(145, 183, 193);
+    }
+    .main-nav {
+        width: 100%;
+        display: inline-block !important;
+        margin: -8px 10px 0 0;
+        padding-bottom: 5px;
   }
     .main-header {
         overflow:hidden;
@@ -272,6 +288,9 @@ button.submit {
         float: right;
         background-color: transparent;
         display: block;
+
+        border-left: solid white 1px;
+        padding: 7px 10px 8px 10px;
         color: white;
         padding: 6px;
     }
@@ -283,6 +302,10 @@ button.submit {
         color: rgb(247, 204, 75);
     }
     #login-button {
+        width: 30vw;
+        height: 7vh;
+    }
+}
         /*width: 30vw;
         height: 7vh;*/
     }
