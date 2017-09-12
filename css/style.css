@@ -6,6 +6,7 @@
 a{
   text-decoration: none;
 }
+
 ul, ol{
   margin: 0;
   padding: 0;
@@ -43,6 +44,7 @@ p{
 .main-nav{
   position: relative;
   display: none;
+  z-index: 10;
   clear: both;
 }
 .main-nav a{
@@ -62,6 +64,7 @@ p{
   background-position: 50% 45px;
   text-align: center;
   height: 80vh;
+
 }
 .home h2, .home h3{
   color: #303233;
@@ -76,10 +79,12 @@ p{
 .front-banner h2{
   font-size: 3em;
   text-transform: uppercase;
+
 }
 .front-banner h3{
   font-size: 1.6em;
   font-family: 'Courgette', cursive;
+
 }
 #login-button{
   display: inline-block;
@@ -88,7 +93,8 @@ p{
   background-color:  rgb(247, 204, 75);
   border-radius: 10px 10px;
   width: 50vw;
-  height: 11vh;
+  max-width: 200px;
+  /*height: 11vh;*/
   line-height: 2.5em;
   margin-top: 50px;
   margin-bottom: 20px;
@@ -119,13 +125,125 @@ p{
   margin: 40px 0;
 }
 
+/*----------------------*/
+details{
+  text-align: left;
+  padding: 5px;
+  font-family: Arial;
+  margin-bottom:5px;
+  width:auto;
+  background-color: #EEE;
+}
+
+summary{
+  font-weight: bold;
+  color: SteelBlue;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.about{
+  background-color: rgb(145, 183, 193);
+  overflow: hidden;
+}
+.faq-title{
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  padding: 5px;
+  margin: 3px;
+  font-size: 1.2em;
+  color: rgb(247, 204, 75);
+}
+.faq{
+  float: left;
+}
+
+.video-home{
+margin-top: 60px;
+  position: relative;
+  width: auto;
+  z-index: -1;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.video {
+  width:100%;
+
+}
+
+.contact, .home {
+  background-color: rgb(145, 183, 193);
+}
+.body-contact {
+  background-color: white;
+}
+
+.contact_form button{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact_form h2, .contact_form label {
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.contact_form li {
+    padding: 15px 0px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    font-size: 1.2em;
+}
+.contact_form label {
+    width: 25%;
+    display: inline-block;
+    padding: 3px;
+}
+
+.contact_form input {
+    height: 20px;
+    width: 70%;
+    padding: 5px 8px;
+    min-width: 200px;
+    max-width: 400px;
+}
+
+.contact_form textarea {
+    height: 150px;
+    padding: 8px;
+    width: 70%;
+    min-width: 200px;
+    max-width: 400px;
+}
+
+.contact_form input, .contact_form textarea {
+    border: 1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius: 2px;
+}
+
+button.submit {
+    background-color: #68b12f;
+    border: 1px solid #509111;
+    border-bottom: 1px solid #5b992b;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+}
+
 /* Tablet */
 
 @media (min-width: 620px) {
+
     #login-button {
         width: 40vw;
         height: 7vh;
     }
+    /*#login-button {
+        width: 40vw;
+    }*/
     .toggle-nav {
         padding: 12px 13px;
         margin-top: -3px;
@@ -138,6 +256,7 @@ p{
 @media (min-width: 1000px) {
     .toggle-nav {
         display: none;
+
     }
     .main-header {
         overflow: hidden;
@@ -150,13 +269,34 @@ p{
         display: inline-block !important;
         margin: -8px 10px 0 0;
         padding-bottom: 5px;
+  }
+    .main-header {
+        overflow:hidden;
+    }
+    /*.logo {
+        background-color: rgb(145, 183, 193);
+    }*/
+
+    .main-nav {
+        width: 100%;
+        display: inline-block !important;
+        text-align: center;
+        /*padding-bottom: 5px;*/
+        padding: 5px;
     }
     .main-nav a {
         float: right;
         background-color: transparent;
         display: block;
+
         border-left: solid white 1px;
         padding: 7px 10px 8px 10px;
+        color: white;
+        padding: 6px;
+    }
+    .main-nav li{
+      display: inline-block;
+      /*border-right: solid white 1px;*/
     }
     .main-nav a:hover {
         color: rgb(247, 204, 75);
@@ -165,4 +305,9 @@ p{
         width: 30vw;
         height: 7vh;
     }
+}
+        /*width: 30vw;
+        height: 7vh;*/
+    }
+
 }
