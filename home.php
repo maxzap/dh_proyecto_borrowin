@@ -11,6 +11,7 @@
   <body>
     <!--Division contenedora-->
     <div class="container">
+
       <!--HOME-->
       <section class="home">
         <h1>Borrowin!</h1>
@@ -24,7 +25,8 @@
               <ul>
                   <li><a href="#services">Registro/Login</a></li>
                   <li><a href="#portfolio">Beneficios de la RS</a></li>
-                  <li><a href="#about">Preguntas Frecuentes</a></li>
+                  <li><a href="about.php">Preguntas Frecuentes</a></li>
+                  <li><a href="contacto.php">Contactate con nosotros</a></li>
               </ul>
           </nav>
         </header>
@@ -35,9 +37,13 @@
         </div>
 
       </section>
+      <div class="video-home">
+        <video class="video" src="videos/video-home.mp4" controls autoplay>
+        </video>
+      </div>
       <!--Footer-->
       <footer class="main-footer">
-        <h3>Copyright Your Website 2014</h3>
+        <h3>Borrowin - 2017</h3>
         <img src="" alt="">
         <img src="" alt="">
         <img src="" alt="">
