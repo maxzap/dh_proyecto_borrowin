@@ -23,7 +23,7 @@
           <!--Barra de navegación-->
           <nav class="main-nav">
               <ul>
-                  <li><a href="#services">Registro/Login</a></li>
+                  <li><a href="index.php?login=true">Login</a></li>
                   <li><a href="#portfolio">Beneficios de la RS</a></li>
                   <li><a href="about.php">Preguntas Frecuentes</a></li>
                   <li><a href="contacto.php">Contactate con nosotros</a></li>
@@ -33,7 +33,7 @@
         <div class="front-banner">
           <h3>Bienvenido a Borrowin!</h3>
           <h2>prestarlo con ganas</h2>
-          <a href="index.php?login=true" id="login-button">Registrate</a>
+          <a href="registerForm.php" id="home-register-button">Registrate</a>
         </div>
 
       </section>

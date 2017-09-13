@@ -81,7 +81,7 @@ h1{
 }
 
 /* Inputs */
-a, input{
+#login-form-button, .orange-btn, .login-form-input{
   font-family: 'Open Sans Condensed', sans-serif;
   text-decoration: none;
   position: relative;
@@ -93,14 +93,14 @@ a, input{
   padding: 8px;
   border-radius: 6px;
   border: none;
-  background: rgba(3, 3, 3, 0.43);
+  background: rgba(236, 19, 19, 0.43);
   -webkit-transition: all 2s ease-in-out;
   -moz-transition: all 2s ease-in-out;
   -o-transition: all 2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
-input:focus{
+.login-form-input:focus, #new-pass-input:focus{
   outline: none;
   box-shadow: 3px 3px 10px #333;
   background: rgba(3,3,3,.18);
@@ -117,14 +117,14 @@ input:focus{
    color: #333;  }
 
 /* Link */
-a{
+#login-form-button{
   font-family: 'Open Sans Condensed', sans-serif;
   text-align: center;
   padding: 4px 8px;
   background: rgba(107,255,3,0.3);
 }
 
-a:hover{
+#login-form-button:hover, .orange-btn:hover{
   opacity: 0.7;
 }
 

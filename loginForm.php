@@ -6,7 +6,7 @@
     <title>Login | Borrowin!</title>
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Courgette|Anton|Baloo+Tamma|Marvel|Katibeh" rel="stylesheet">
-    <link rel="stylesheet" href="css/login-style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -23,7 +23,7 @@
           </ul>
       </nav>
     </header>
-
+    <!--Login-->
       <div id="login-button">
         <img id="login-img" src="https://dqcgrsy5v35b9.cloudfront.net/cruiseplanner/assets/img/icons/login-w-icon.png">
         </img>
@@ -34,16 +34,16 @@
                 <img id="close-btn-img" src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
               </span>
 
-      <form>
-          <input type="email" name="email" placeholder="E-mail">
-          <input type="password" name="pass" placeholder="Contraseña">
-          <a href="#">Log in</a>
+      <form >
+          <input class="login-form-input" type="email" name="email" placeholder="E-mail">
+          <input class="login-form-input" type="password" name="pass" placeholder="Contraseña">
+          <a id="login-form-button" href="#">Log in</a>
             <div id="remember-container">
               <input type="checkbox" id="checkbox-2-1" class="checkbox" checked="checked"/>
               <span id="remember">Recordar</span>
               <span id="forgotten">Olvide mi Contraseña</span>
             </div>
-    </form>
+     </form>
       </div>
 
 <!-- Forgotten Password Container -->
@@ -54,14 +54,20 @@
         </span>
 
         <form>
-          <input type="email" name="email" placeholder="E-mail">
+          <input class="login-form-input" type="email" name="email" placeholder="E-mail">
           <a href="#" class="orange-btn">Get new password</a>
       </form>
       </div>
       <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
       <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-        <script src="js/index.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script>
+        $('.toggle-nav').click(function (){
+          $('.main-nav').slideToggle(300);
+        });
       </script>
+        <script src="js/index.js"></script>
+        </script>
     </form>
   </body>
 </html>
