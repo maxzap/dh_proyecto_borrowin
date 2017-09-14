@@ -53,7 +53,7 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   	<script>
-  		$('.toggle-nav').click(function (){
+    		$('.toggle-nav').click(function (){
   			$('.main-nav').slideToggle(300);
   		});
   	</script>

@@ -15,11 +15,12 @@ ul, ol{
 }
 h1{
   font-family: 'Kaushan Script', cursive;
-  padding: 5px;
-  margin: 3px;
+  padding: 8.2px;
+  margin: 0;
   font-size: 1.8em;
   color: rgb(247, 204, 75);
   float: left;
+  position: absolute;
 }
 h2, h3 {
   font-family: 'Baloo+Tamma', sans-serif;
@@ -30,7 +31,7 @@ p{
 }
 .main-header{
   background-color: rgb(145, 183, 193);
-  height: 45px;
+  height: 60px;
 }
 .toggle-nav{
   position: absolute;
@@ -60,7 +61,7 @@ p{
 .home{
   background-image:url(../images/fondo_home-1.jpg);
   background-repeat: no-repeat;
-  background-color: rgb(145, 183, 193);
+  background-color: rgba(144, 182, 193, 0.79);
   background-size: 100%;
   background-position: 50% 45px;
   text-align: center;
@@ -74,8 +75,8 @@ p{
 .front-banner{
   display: block;
   position: relative;
-  top: 35%;
-  background: linear-gradient(rgba(163, 185, 190, 0.6),#FFFFFF);
+  top: 45%;
+  background: linear-gradient(rgba(163, 185, 190, 0.6),#FFFFFF 60%);
 }
 .front-banner h2{
   font-size: 2em;
@@ -306,12 +307,14 @@ button.submit {
         width: 30vw;
         height: 7vh;
     }
-}
-        /*width: 30vw;
-        height: 7vh;*/
+    .front-banner{
+      top: 65%;
+    }
+    .home{
+      background-size: 80%;
     }
 }
-/*-----------------------------------------------------------------*/
+/*-----------------------------Formulario de Login------------------------------------*/
 .login-html{
   background: url(../images/fondo-login.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -380,16 +383,6 @@ button.submit {
 
 .close-btn:hover{
   opacity: .5;
-}
-
-/* Heading */
-h1{
-  font-family: 'Kaushan Script', cursive;
-  padding: 5px;
-  margin: 3px;
-  font-size: 1.8em;
-  color: rgb(247, 204, 75);
-  float: left;
 }
 
 /* Inputs */
@@ -522,15 +515,90 @@ h1{
   background: rgba(87,198,255,.5);
 }
 .cont{
-  position: absolute;
+  position: relative;
   display: inline-block;
-  background-color: rgba(15, 12, 17, 0.25);
+  background-color: rgba(15, 12, 17, 0.30);
   height: 100vh;
   width: 100vw;
-
 }
-.home-login{
-  overflow: hidden;
-  background-color: rgb(145, 183, 193);
+/*----------------------------Formulario de registro-------------------------------------------*/
+/* Full-width input fields */
+#input-email, .input-password {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
 
+/* Set a style for all buttons */
+.signupbtn, .cancelbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {float:left;width:50%}
+
+/* The Modal (background) */
+.modal {
+    /*display: none; /* Hidden by default */*/
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
 }

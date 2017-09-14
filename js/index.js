@@ -20,3 +20,6 @@ $('#forgotten').click(function(){
     $("#forgotten-container").fadeIn();
   });
 });
+$('.toggle-nav').click(function (){
+  $('.main-nav').slideToggle(300);
+});

@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <!--Division contenedora-->
     <div class="container">
+      <!--ABOUT-->
     <section class="home-login">
     <h1>Borrowin!</h1>
+    <!--Cabecera-->
     <header class="main-header">
       <a href="#" class="toggle-nav">
         <span class="ion-navicon-round"></span>
@@ -20,7 +23,7 @@
       <nav class="main-nav">
           <ul>
               <li><a href="home.php">Home</a></li>
-              <li><a href="#services">Registro/Login</a></li>
+              <li><a href="registerForm.php">Registrate</a></li>
               <li><a href="#portfolio">Beneficios de la RS</a></li>
               <li><a href="about.php">Preguntas Frecuentes</a></li>
           </ul>
@@ -69,11 +72,11 @@
       <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
       <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
       <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <script>
+      <!-- <script>
         $('.toggle-nav').click(function (){
           $('.main-nav').slideToggle(300);
         });
-      </script>
+      </script> -->
         <script src="js/index.js"></script>
         </script>
     </form>
