@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div class="container">
+    <section class="home-login">
+    <h1>Borrowin!</h1>
     <header class="main-header">
       <a href="#" class="toggle-nav">
         <span class="ion-navicon-round"></span>
@@ -23,41 +26,46 @@
           </ul>
       </nav>
     </header>
-    <!--Login-->
+    </section>
+    <div class="cont">
+      <!--Login-->
       <div id="login-button">
         <img id="login-img" src="https://dqcgrsy5v35b9.cloudfront.net/cruiseplanner/assets/img/icons/login-w-icon.png">
-        </img>
-      </div>
-      <div id="container">
-          <h1>Log In</h1>
-              <span class="close-btn">
-                <img id="close-btn-img" src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
-              </span>
+      </img>
+    </div>
+    <div id="container">
+      <h1>Log In</h1>
+      <span class="close-btn">
+        <img id="close-btn-img" src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+      </span>
 
       <form >
-          <input class="login-form-input" type="email" name="email" placeholder="E-mail">
-          <input class="login-form-input" type="password" name="pass" placeholder="Contraseña">
-          <a id="login-form-button" href="#">Log in</a>
-            <div id="remember-container">
-              <input type="checkbox" id="checkbox-2-1" class="checkbox" checked="checked"/>
-              <span id="remember">Recordar</span>
-              <span id="forgotten">Olvide mi Contraseña</span>
-            </div>
-     </form>
-      </div>
-
-<!-- Forgotten Password Container -->
-      <div id="forgotten-container">
-         <h1>Forgotten</h1>
-        <span class="close-btn">
-          <img id="close-btn-img" src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
-        </span>
-
-        <form>
-          <input class="login-form-input" type="email" name="email" placeholder="E-mail">
-          <a href="#" class="orange-btn">Get new password</a>
+        <input class="login-form-input" type="email" name="email" placeholder="E-mail">
+        <input class="login-form-input" type="password" name="pass" placeholder="Contraseña">
+        <a id="login-form-button" href="#">Log in</a>
+        <div id="remember-container">
+          <input type="checkbox" id="checkbox-2-1" class="checkbox" checked="checked"/>
+          <span id="remember">Recordar</span>
+          <span id="forgotten">Olvide mi Contraseña</span>
+        </div>
       </form>
-      </div>
+    </div>
+
+    <!-- Forgotten Password Container -->
+    <div id="forgotten-container">
+      <h1>Forgotten</h1>
+      <span class="close-btn">
+        <img id="close-btn-img" src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+      </span>
+
+      <form>
+        <input class="login-form-input" type="email" name="email" placeholder="E-mail">
+        <a href="#" class="orange-btn">Get new password</a>
+      </form>
+    </div>
+
+    </div>
+    </div>
       <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
       <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
       <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

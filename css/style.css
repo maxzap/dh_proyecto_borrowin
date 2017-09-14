@@ -319,7 +319,7 @@ button.submit {
   -o-background-size: cover;
   background-size: cover;
   overflow: hidden;
-  color: rgb(227, 19, 27);
+  color: rgba(227, 19, 27, 0.61);
 }
 
 #close-btn-img, #login-img{
@@ -332,11 +332,6 @@ button.submit {
 
 #login-button{
   cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   padding: 30px;
   margin: auto;
   width: 100px;
@@ -345,7 +340,9 @@ button.submit {
   background: rgba(3,3,3,.8);
   overflow: hidden;
   opacity: 0.4;
-  box-shadow: 10px 10px 30px #000;}
+  box-shadow: 10px 10px 30px #000;
+  margin-top: 9em;
+}
 
 /* Login container */
 #container{
@@ -523,4 +520,17 @@ h1{
 
 .orange-btn{
   background: rgba(87,198,255,.5);
+}
+.cont{
+  position: absolute;
+  display: inline-block;
+  background-color: rgba(15, 12, 17, 0.25);
+  height: 100vh;
+  width: 100vw;
+
+}
+.home-login{
+  overflow: hidden;
+  background-color: rgb(145, 183, 193);
+
 }
