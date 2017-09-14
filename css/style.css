@@ -20,7 +20,6 @@ h1{
   font-size: 1.8em;
   color: rgb(247, 204, 75);
   float: left;
-  position: absolute;
 }
 h2, h3 {
   font-family: 'Baloo+Tamma', sans-serif;
@@ -173,7 +172,7 @@ margin-top: 60px;
 
 }
 
-.contact, .home {
+.contact, .home, .home-login {
   background-color: rgb(145, 183, 193);
 }
 .body-contact {
