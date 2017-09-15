@@ -24,7 +24,6 @@
           <nav class="main-nav">
               <ul>
                   <li><a href="index.php?login=true">Login</a></li>
-                  <li><a href="#portfolio">Beneficios de la RS</a></li>
                   <li><a href="about.php">Preguntas Frecuentes</a></li>
                   <li><a href="contacto.php">Contactate con nosotros</a></li>
               </ul>

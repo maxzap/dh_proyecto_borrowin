@@ -30,33 +30,35 @@
               </ul>
           </nav>
         </header>
-        <div class="body-contact">
-          <form  class="contact_form" action="#">
-            <div>
-              <ul>
-                    <li>
-                      <h2>Contacto</h2>
-                    </li>
-                    <li>
-                      <label for="name">Nombre:</label>
-                      <input type="text" placeholder="Nombre" required autofocus/>
-                    </li>
-                    <li>
-                      <label for="email">Email:</label>
-                      <input type="email" name="email" placeholder="tu@email.com" required />
-                    </li>
-                    <li>
-                      <label for="message">Mensaje:</label>
-                      <textarea name="message" required></textarea>
-                    </li>
-                    <li>
-                      <button class="submit" type="submit">Enviar mensaje</button>
-                    </li>
-                </ul>
-             </div>
-           </form>
-        </div>
-
+        <section class="home">
+          <div class="titulos">
+            <h2>Contacto!</h2>
+          </div>
+          <div class="body-contact">
+            <form  class="contact_form" action="#">
+              <div>
+                <ul>
+                      <li>
+                        <label for="name">Nombre:</label>
+                        <input type="text" placeholder="Nombre" required autofocus/>
+                      </li>
+                      <li>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="tu@email.com" required />
+                      </li>
+                      <li>
+                        <label for="message">Mensaje:</label>
+                        <textarea name="message" required></textarea>
+                      </li>
+                      <li>
+                        <button class="submit" type="submit">Enviar mensaje</button>
+                      </li>
+                  </ul>
+               </div>
+             </form>
+             <br><br>
+          </div>
+      </section>
       </section>
       <!--Footer-->
     <footer class="main-footer">

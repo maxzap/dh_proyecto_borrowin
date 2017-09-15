@@ -71,6 +71,11 @@ p{
   color: #303233;
   text-align: center;
 }
+.front-banner-registro{
+  display: block;
+  float: left;
+  background: linear-gradient(rgba(163, 185, 190, 0.6),#FFFFFF 60%);  
+}
 .front-banner{
   display: block;
   position: relative;
@@ -86,6 +91,15 @@ p{
   font-size: 1.6em;
   font-family: 'Courgette', cursive;
 
+}
+.titulos{
+  overflow: hidden;
+  background: linear-gradient(rgba(163, 185, 190, 0.6),#FFFFFF 60%);
+}
+.titulos h2{
+  margin-top: 10px;
+  font-size: 2em;
+  float: left;
 }
 #home-register-button{
   display: inline-block;
@@ -176,7 +190,30 @@ margin-top: 60px;
   background-color: rgb(145, 183, 193);
 }
 .body-contact {
-  background-color: white;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /*SN: auto; Enable scroll if needed */
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    max-height: 400px;
+    background: linear-gradient(rgba(163, 185, 190, 0.3),#FFFFFF 95%);
+
+/*  height: 100%;
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+*/
+  
+}
+.contact_form{
+  background-color: rgba(178, 173, 157, 0.5);
+  max-width: 300px;
+  float: left;
 }
 
 .contact_form button{
@@ -234,85 +271,12 @@ button.submit {
     text-shadow: 0 -1px 0 #396715;
 }
 
-/* Tablet */
-
-@media (min-width: 620px) {
-
-    #login-button {
-        width: 40vw;
-        height: 7vh;
-    }
-    /*#login-button {
-        width: 40vw;
-    }*/
-    .toggle-nav {
-        padding: 12px 13px;
-        margin-top: -3px;
-    }
-}
 
 
-/* Desktop */
 
-@media (min-width: 1000px) {
-    .toggle-nav {
-        display: none;
 
-    }
-    .main-header {
-        overflow: hidden;
-    }
-    .logo {
-        background-color: rgb(145, 183, 193);
-    }
-    .main-nav {
-        width: 100%;
-        display: inline-block !important;
-        margin: -8px 10px 0 0;
-        padding-bottom: 5px;
-  }
-    .main-header {
-        overflow:hidden;
-    }
-    /*.logo {
-        background-color: rgb(145, 183, 193);
-    }*/
 
-    .main-nav {
-        width: 100%;
-        display: inline-block !important;
-        text-align: center;
-        /*padding-bottom: 5px;*/
-        padding: 5px;
-    }
-    .main-nav a {
-        float: right;
-        background-color: transparent;
-        display: block;
 
-        border-left: solid white 1px;
-        padding: 7px 10px 8px 10px;
-        color: white;
-        padding: 6px;
-    }
-    .main-nav li{
-      display: inline-block;
-      /*border-right: solid white 1px;*/
-    }
-    .main-nav a:hover {
-        color: rgb(247, 204, 75);
-    }
-    #login-button {
-        width: 30vw;
-        height: 7vh;
-    }
-    .front-banner{
-      top: 65%;
-    }
-    .home{
-      background-size: 80%;
-    }
-}
 /*-----------------------------Formulario de Login------------------------------------*/
 .login-html{
   background: url(../images/fondo-login.jpg) no-repeat center center fixed;
@@ -553,15 +517,15 @@ button.submit {
 
 /* The Modal (background) */
 .modal {
-    /*display: none; /* Hidden by default */*/
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    /*display: none;  Hidden by default */
+  /*SN:  position: fixed;  Stay in place*/ 
+  /*SN:  z-index: 1;  Sit on top */ 
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    padding-top: 60px;
+    overflow: hidden; /*SN: auto; Enable scroll if needed */
+    padding-top: 10px;
 }
 
 /* Modal Content/Box */
@@ -570,6 +534,7 @@ button.submit {
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 300px;
 }
 
 /* The Close Button (x) */
@@ -596,8 +561,90 @@ button.submit {
 }
 
 /* Change styles for cancel button and signup button on extra small screens */
+
+
+
+/*MEDIA QUERIES*/
+/* smartphone */
 @media screen and (max-width: 300px) {
     .cancelbtn, .signupbtn {
        width: 100%;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 620px) {
+
+    #login-button {
+        width: 40vw;
+        height: 7vh;
+    }
+    /*#login-button {
+        width: 40vw;
+    }*/
+    .toggle-nav {
+        padding: 12px 13px;
+        margin-top: -3px;
+    }
+}
+/* Desktop */
+
+@media (min-width: 1000px) {
+    .toggle-nav {
+        display: none;
+
+    }
+    .main-header {
+        overflow: hidden;
+    }
+    .logo {
+        background-color: rgb(145, 183, 193);
+    }
+    .main-nav {
+        width: 100%;
+        display: inline-block !important;
+        margin: -8px 10px 0 0;
+        padding-bottom: 5px;
+  }
+    .main-header {
+        overflow:hidden;
+    }
+    /*.logo {
+        background-color: rgb(145, 183, 193);
+    }*/
+
+    .main-nav {
+        width: 100%;
+        display: inline-block !important;
+        text-align: center;
+        /*padding-bottom: 5px;*/
+        padding: 5px;
+    }
+    .main-nav a {
+        float: right;
+        background-color: transparent;
+        display: block;
+        border-left: solid white 1px;
+        padding: 7px 10px 8px 10px;
+        color: white;
+        padding: 6px;
+    }
+    .main-nav li{
+      display: inline-block;
+      /*border-right: solid white 1px;*/
+    }
+    .main-nav a:hover {
+        color: rgb(247, 204, 75);
+    }
+    #login-button {
+        width: 30vw;
+        height: 7vh;
+    }
+    .front-banner{
+      top: 65%;
+    }
+    .home{
+      background-size: 80%;
     }
 }

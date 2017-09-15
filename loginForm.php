@@ -68,6 +68,14 @@
     </div>
 
     </div>
+      <footer class="main-footer">
+        <h3>Borrowin - 2017</h3>
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Term of Use</a>
+      </footer>
     </div>
       <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
       <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
